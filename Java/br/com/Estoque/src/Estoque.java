@@ -44,7 +44,7 @@ public class Estoque {
                 } else {
                     System.out.println("Quantidade insuficiente em estoque.");
                 }
-                return;
+               
             }
         }
         System.out.println("Produto não encontrado.");
@@ -53,7 +53,7 @@ public class Estoque {
     public List<Produto> filtrarPorNome(String nome) {
         List<Produto> filtrados = new ArrayList<>();
         for (Produto produto : produtos) {
-            if (produto.getNome().equalsIgnoreCase(nome)) {
+            if (produto.getNome().equals(nome)) {
                 filtrados.add(produto);
             }
         }
@@ -73,7 +73,7 @@ public class Estoque {
     public List<Produto> filtrarPorTipo(String tipo) {
         List<Produto> filtrados = new ArrayList<>();
         for (Produto produto : produtos) {
-            if (produto.getTipo().equalsIgnoreCase(tipo)) {
+            if (produto.getTipo().equals(tipo)) {
                 filtrados.add(produto);
             }
         }
