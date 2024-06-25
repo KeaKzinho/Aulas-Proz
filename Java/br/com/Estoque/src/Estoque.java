@@ -29,7 +29,7 @@ public class Estoque {
         for (Produto produto : produtos) {
             if (produto.getCodigoBarras().equals(codigoBarras)) {
                 produto.exibirDetalhes();
-                return;
+                
             }
         }
         System.out.println("Produto não encontrado!");
