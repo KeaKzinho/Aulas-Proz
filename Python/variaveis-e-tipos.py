@@ -1,0 +1,7 @@
+inteiro = int(input("Número inteiro: "))
+float = float(input("Número flutuante: "))
+string = str(input("String: "))
+print("-"*50)
+print(type(inteiro))
+print(type(float))
+print(type(string))
